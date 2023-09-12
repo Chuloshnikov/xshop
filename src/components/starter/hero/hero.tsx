@@ -7,11 +7,11 @@ export default component$(() => {
   return (
     <div class="w-[1280px] h-[573px]">
       <div 
-      class="z-1 relative w-full h-full text-center"
+      class="z-1 relative w-full h-full text-center rounded-b-3xl"
       >
         <HeroImage 
         class="w-full h-full
-        object-cover"
+        object-cover rounded-b-3xl"
         />
         <div
         class="flex flex-col gap-10 w-full absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white"

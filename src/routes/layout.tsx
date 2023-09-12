@@ -26,11 +26,16 @@ export const useServerTimeLoader = routeLoader$(() => {
 export default component$(() => {
   return (
     <>
+    <div 
+    class="flex flex-col items-center"
+    >
       <Header />
       <main>
         <Slot />
       </main>
       <Footer />
+    </div>
+      
     </>
   );
 });
