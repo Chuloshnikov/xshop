@@ -13,8 +13,6 @@ html {
   tab-size: 4;
   font-family:
   'Work Sans', sans-serif;
-
-
 }
 
 body {
@@ -22,7 +20,4 @@ body {
   padding: 0;
   margin: 0;
   line-height: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
