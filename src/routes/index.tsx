@@ -4,6 +4,7 @@ import { routeLoader$ } from '@builder.io/qwik-city';
 import Hero from "~/components/starter/hero/hero";
 import { Link } from '@builder.io/qwik-city';
 import Middleframe from "~/components/starter/middleFrame/middleframe";
+import Meinfaq from "~/components/starter/meinFaq/meinfaq";
 
 interface BestSellesData {
   id: number,
@@ -187,6 +188,7 @@ export default component$(() => {
       )}
       />
       </div>
+      <Meinfaq/>
     </div>
   );
 });
