@@ -5,12 +5,19 @@ import Hero from "~/components/starter/hero/hero";
 import { Link } from '@builder.io/qwik-city';
 import Middleframe from "~/components/starter/middleFrame/middleframe";
 import Meinfaq from "~/components/starter/meinFaq/meinfaq";
+import LightBasket from "../media/icons/lightBascet.svg?jsx";
+import FavoritesIcon from '../media/icons/Favorites.svg?jsx';
+import { Image } from '@unpic/qwik';
+
+
+//test data
+import bestSellesDataTest from "../../data/index";
 
 interface BestSellesData {
   id: number,
   img: string,
   title: string, 
-  price: numder
+  price: numder,
 }
 
 interface NewsData {
@@ -86,34 +93,79 @@ export default component$(() => {
     <div>
       <Hero/>
       <div class="">
-        <div class="bestSellesContainer">
+        <div class="bestSellesContainer flex flex-col gap-10 py-[75.4px] px-10">
+          <div>
+            <h2
+            class="sectionTitle"
+            >
+              Best sellers
+            </h2>
+          </div>
         <Resource
-          value={bestSellesData}
+          value={bestSellesDataTest}
           onPending={() => 
           <div>
             loading...
           </div>}
-            onResolved={(blogs) => (
+            onResolved={(sellesProduct) => (
             <div
-              class="text-[2px]"
+              class="grid gap-2 lgl:grid-cols-4"
                 >
-                {blogs && blogs.map(blog => (
-                <div
-                  
-                  key={blog.id}
+                {sellesProduct && sellesProduct.map(product => (
+                  <section
+                  key={product.id}
+                  class="hoverLinkParent flex flex-col gap-3"
                   >
-                    <soan>{blog.user_id}</soan>
-                    <h3>{blog.title}</h3>
-                    <p>{blog.body.slice(0, 50)}...</p>
-                    <div>
-                      <Link 
-                      href={`/blog/${blog.id}`}
-                      
-                      >
-                        More info
-                      </Link>
+                    <div
+                      class="bg-white flex flex-col overflow-hidden min-w-[294px] min-h-[298px] rounded-3xl"
+                        >
+                          <div
+                          class="z-50 flex justify-end"
+                          >
+                              <FavoritesIcon
+                              class="mr-[18px] mt-3"
+                              />
+                          </div>
+                          <div
+                          class="mx-auto"
+                          >
+                              <Image  
+                              layout="constrained" 
+                              width={800}
+                              height={600}
+                              loading="lazy" 
+                              class=" w-[202px] h-[202px] object-cover" 
+                              src={product.img} 
+                              alt="productImg"
+                                />
+                          </div>
+                          <div
+                              class="flex items-end justify-end min-w-[190px] min-h-[60px]"
+                              >
+                                  
+                                    
+            
+                                      <Link 
+                                      class="linkToShow text-mainBg p-3 rounded-xl bg-accentBg mr-[18px] mb-[16px] z-50 text-[14px] flex gap-[10px] items-center justify-center "
+                                      href={`/`}
+                                  >
+                                    <span>Lägg till i kundvagn</span>
+                                    <LightBasket/>
+                                  </Link>
+                                
+                              </div>
                     </div>
-                </div>
+                    <div
+                    class="sectionText text-base flex flex-col gap-2 max-w-[294px] min-h-[44px]"
+                    >
+                        <h3>{product.title}</h3>
+                        <p
+                        class="priceText"
+                        >{product.price} грн</p>
+                      <div>
+                      </div>
+                    </div>
+                </section>
               ))}
         </div>
       )}
