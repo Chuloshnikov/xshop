@@ -109,7 +109,7 @@ export default component$(() => {
           </div>}
             onResolved={(sellesProduct) => (
             <div
-              class="grid gap-2 lgl:grid-cols-4"
+              class="grid gap-2 mdl:grid-cols-2 lgl:grid-cols-4"
                 >
                 {sellesProduct && sellesProduct.map(product => (
                   <section
@@ -174,39 +174,84 @@ export default component$(() => {
       </div>
       <Middleframe/>
       {/*Categories*/}
-      <div class="newProductsContainer">
-      <Resource
-          value={newProductsData}
+      <div class="bestSellesContainer flex flex-col gap-10 py-[75.4px] px-10">
+          <div>
+            <h2
+            class="sectionTitle"
+            >
+              New products
+            </h2>
+          </div>
+        <Resource
+          value={bestSellesDataTest}
           onPending={() => 
           <div>
             loading...
           </div>}
-            onResolved={(blogs) => (
+            onResolved={(sellesProduct) => (
             <div
-              class="text-[2px]"
+              class="grid gap-2 lgl:grid-cols-4"
                 >
-                {blogs && blogs.map(blog => (
-                <div
-                  
-                  key={blog.id}
+                {sellesProduct && sellesProduct.map(product => (
+                  <section
+                  key={product.id}
+                  class="hoverLinkParent flex flex-col gap-3"
                   >
-                    <soan>{blog.user_id}</soan>
-                    <h3>{blog.title}</h3>
-                    <p>{blog.body.slice(0, 50)}...</p>
-                    <div>
-                      <Link 
-                      href={`/blog/${blog.id}`}
-                      
-                      >
-                        More info
-                      </Link>
+                    <div
+                      class="bg-white flex flex-col overflow-hidden min-w-[294px] min-h-[298px] rounded-3xl"
+                        >
+                          <div
+                          class="z-50 flex justify-end"
+                          >
+                              <FavoritesIcon
+                              class="mr-[18px] mt-3"
+                              />
+                          </div>
+                          <div
+                          class="mx-auto"
+                          >
+                              <Image  
+                              layout="constrained" 
+                              width={800}
+                              height={600}
+                              loading="lazy" 
+                              class=" w-[202px] h-[202px] object-cover" 
+                              src={product.img} 
+                              alt="productImg"
+                                />
+                          </div>
+                          <div
+                              class="flex items-end justify-end min-w-[190px] min-h-[60px]"
+                              >
+                                  
+                                    
+            
+                                      <Link 
+                                      class="linkToShow text-mainBg p-3 rounded-xl bg-accentBg mr-[18px] mb-[16px] z-50 text-[14px] flex gap-[10px] items-center justify-center "
+                                      href={`/`}
+                                  >
+                                    <span>Lägg till i kundvagn</span>
+                                    <LightBasket/>
+                                  </Link>
+                                
+                              </div>
                     </div>
-                </div>
+                    <div
+                    class="sectionText text-base flex flex-col gap-2 max-w-[294px] min-h-[44px]"
+                    >
+                        <h3>{product.title}</h3>
+                        <p
+                        class="priceText"
+                        >{product.price} грн</p>
+                      <div>
+                      </div>
+                    </div>
+                </section>
               ))}
         </div>
       )}
       />
-      </div>
+        </div>
       <div class="ourNewsContainer">
       <Resource
           value={ourNewsData}
