@@ -6,11 +6,12 @@ import FavoritesIcon from '../../../media/icons/Favorites.svg?jsx';
 import LanguageIcon from '../../../media/icons/Language.svg?jsx';
 import ProfileIcon from '../../../media/icons/profileIcon.svg?jsx';
 import BasketIcon from '../../../media/icons/basketIcon.svg?jsx';
+import MenuIcon from '../../../media/icons/menuIcon.svg?jsx';
 
 export default component$(() => {
   return (
     <header
-    class="fixed z-50 bg-mainBg max-w-[1237px] w-full p-3 rounded-xl mt-[21px] mx-auto"
+    class="fixed z-50 bg-mainBg mdl:max-w-[704px] max-w-[1237px] w-full p-3 rounded-xl mt-[21px] mx-auto"
     >
       <nav class="flex justify-between p-2">
         <div>
@@ -19,7 +20,7 @@ export default component$(() => {
           </a>
         </div>
         <div
-        class="flex items-center"
+        class="flex items-center xs:hidden"
         >
           <ul
           class="flex gap-6 text-base "
@@ -83,6 +84,7 @@ export default component$(() => {
             </li>
             <li>
               <Link
+              class="xs:hidden lg:inline"
               href="/"
               >
                   <LanguageIcon/>
@@ -97,7 +99,7 @@ export default component$(() => {
             </li>
             <li>
                 <Link
-                class=""
+                class="xs:hidden lg:inline"
                 href="/"
                 >
                     <ProfileIcon/>
@@ -111,6 +113,11 @@ export default component$(() => {
                     <BasketIcon/>
                 </Link>
               </li>
+              <button
+                class="xs:inline lg:hidden"
+                >
+                  <MenuIcon/>
+                </button>
           </ul>
         </div>
       </nav>
