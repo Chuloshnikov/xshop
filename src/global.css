@@ -21,3 +21,36 @@ body {
   margin: 0;
   line-height: inherit;
 }
+
+.sectionTitle {
+  @apply text-[#582467] text-[46px] font-medium leading-5
+}
+
+.sectionText {
+  @apply text-[#582467] font-medium leading-5
+}
+
+
+
+.priceText {
+  @apply text-[#9E71AB] text-[14px] font-medium leading-5
+}
+
+
+.hoverLinkParent .linkToShow {
+  display: none;
+}
+
+
+.hoverLinkParent:hover .linkToShow {
+  display: flex;
+}
+
+.hoverLinkParent img {
+  transition: transform 0.3s;  
+}
+
+.hoverLinkParent:hover img {
+  transform: scale(1.282);
+}
+
