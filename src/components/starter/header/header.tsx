@@ -11,7 +11,7 @@ import MenuIcon from '../../../media/icons/menuIcon.svg?jsx';
 export default component$(() => {
   return (
     <header
-    class="fixed z-50 bg-mainBg mdl:max-w-[704px] lg:max-w-[1237px] w-full p-3 rounded-xl mt-[21px] mx-auto"
+    class="fixed z-50 bg-mainBg xs:max-w-[300px] mdl:max-w-[704px] lg:max-w-[920px] xl:max-w-[1237px] w-full xs:py-[15px] xs:px-[18px] xl:p-3 rounded-xl mt-[21px] mx-auto"
     >
       <nav class="flex justify-between p-2">
         <div>
@@ -20,7 +20,7 @@ export default component$(() => {
           </a>
         </div>
         <div
-        class="flex items-center xs:hidden"
+        class="flex items-center xs:hidden lg:flex"
         >
           <ul
           class="flex gap-6 text-base "
@@ -70,10 +70,9 @@ export default component$(() => {
           </ul>
         </div>
         <div
-        class="min-w-[246px] mr-3"
         >
           <ul
-          class="flex gap-5 justify-end items-center w-full"
+          class="flex xs:gap-1 xl:gap-5 justify-end items-center w-full"
           >
             <li>
               <Link
@@ -84,7 +83,7 @@ export default component$(() => {
             </li>
             <li>
               <Link
-              class="xs:hidden lg:inline"
+              class="xs:hidden lg:block"
               href="/"
               >
                   <LanguageIcon/>
@@ -99,7 +98,7 @@ export default component$(() => {
             </li>
             <li>
                 <Link
-                class="xs:hidden lg:inline"
+                class="xs:hidden lg:block"
                 href="/"
                 >
                     <ProfileIcon/>
@@ -107,17 +106,18 @@ export default component$(() => {
               </li>
               <li>
                 <Link
-                class="relative left-[2px]"
                 href="/"
                 >
                     <BasketIcon/>
                 </Link>
               </li>
-              <button
-                class="xs:inline lg:hidden"
-                >
-                  <MenuIcon/>
-                </button>
+              <li>
+                <button
+                  class="xs:block lg:hidden"
+                  >
+                    <MenuIcon/>
+                  </button>
+              </li>
           </ul>
         </div>
       </nav>

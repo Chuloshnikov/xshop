@@ -92,7 +92,7 @@ export default component$(() => {
   return (
     <div>
       <Hero/>
-      <div class="">
+      <div class="max-w-container">
         {/*
         <div class="bestSellesContainer flex flex-col gap-10 xs:pt-[44px] xs:pb-[53px] mdl:pt-[43.67px] mdl:pb-[41.33px] xs:px-auto mdl:px-7 lg:py-[75.4px] lg:px-10">
           <div>
@@ -178,7 +178,8 @@ export default component$(() => {
         </div>
       </div>
       <Middleframe/>
-      {/*Categories*/} </div>
+      //Categories
+      </div>
       <div class="bestSellesContainer flex flex-col gap-10 py-[75.4px] px-10">
           <div>
             <h2
@@ -289,7 +290,9 @@ export default component$(() => {
         </div>
       )}
       />
+      */}
       </div>
+                
       <Meinfaq/>
     </div>
   );
