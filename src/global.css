@@ -23,7 +23,7 @@ body {
 }
 
 .sectionTitle {
-  @apply text-[#582467] text-[46px] font-medium leading-5
+  @apply text-[#582467] xs:text-[26px] xs:text-[36px] lg:text-[46px] font-medium leading-5
 }
 
 .sectionText {

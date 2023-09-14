@@ -93,7 +93,8 @@ export default component$(() => {
     <div>
       <Hero/>
       <div class="">
-        <div class="bestSellesContainer flex flex-col gap-10 py-[75.4px] px-10">
+        {/*
+        <div class="bestSellesContainer flex flex-col gap-10 xs:pt-[44px] xs:pb-[53px] mdl:pt-[43.67px] mdl:pb-[41.33px] xs:px-auto mdl:px-7 lg:py-[75.4px] lg:px-10">
           <div>
             <h2
             class="sectionTitle"
@@ -109,7 +110,7 @@ export default component$(() => {
           </div>}
             onResolved={(sellesProduct) => (
             <div
-              class="grid gap-2 mdl:grid-cols-2 lgl:grid-cols-4"
+              class="grid gap-2 xs:grid-cols-2 mdl:grid-cols-4"
                 >
                 {sellesProduct && sellesProduct.map(product => (
                   <section
@@ -117,13 +118,13 @@ export default component$(() => {
                   class="hoverLinkParent flex flex-col gap-3"
                   >
                     <div
-                      class="bg-white flex flex-col overflow-hidden min-w-[294px] min-h-[298px] rounded-3xl"
+                      class="bg-white flex flex-col overflow-hidden xs:min-w-[146px] mdl:min-w-[172px] lg:min-h-[230px] lg:min-w-[294px] lg:min-h-[298px] rounded-3xl"
                         >
                           <div
                           class="z-50 flex justify-end"
                           >
                               <FavoritesIcon
-                              class="mr-[18px] mt-3"
+                              class="mdl:mr-[8px] lg:mr-[18px] lg:mt-2"
                               />
                           </div>
                           <div
@@ -134,7 +135,7 @@ export default component$(() => {
                               width={800}
                               height={600}
                               loading="lazy" 
-                              class=" w-[202px] h-[202px] object-cover" 
+                              class="xs:mdl:w-[125px] xs:h-[125px] mdl:w-[172px] mdl:h-[174px] lg:w-[202px] lg:h-[202px] object-cover" 
                               src={product.img} 
                               alt="productImg"
                                 />
@@ -146,10 +147,12 @@ export default component$(() => {
                                     
             
                                       <Link 
-                                      class="linkToShow text-mainBg p-3 rounded-xl bg-accentBg mr-[18px] mb-[16px] z-50 text-[14px] flex gap-[10px] items-center justify-center "
+                                      class="linkToShow text-mainBg p-3 rounded-xl bg-accentBg mr-[18px] mb-[14px] z-50 text-[14px] flex gap-[10px] items-center justify-center "
                                       href={`/`}
                                   >
-                                    <span>Lägg till i kundvagn</span>
+                                    <span
+                                    class="xs:hidden lg:inline"
+                                    >Lägg till i kundvagn</span>
                                     <LightBasket/>
                                   </Link>
                                 
@@ -158,7 +161,9 @@ export default component$(() => {
                     <div
                     class="sectionText text-base flex flex-col gap-2 max-w-[294px] min-h-[44px]"
                     >
-                        <h3>{product.title}</h3>
+                        <h3
+                        class="xs:text-[14px] lg:text-[16px]"
+                        >{product.title}</h3>
                         <p
                         class="priceText"
                         >{product.price} грн</p>
@@ -173,7 +178,7 @@ export default component$(() => {
         </div>
       </div>
       <Middleframe/>
-      {/*Categories*/}
+      {/*Categories*/} </div>
       <div class="bestSellesContainer flex flex-col gap-10 py-[75.4px] px-10">
           <div>
             <h2
@@ -259,21 +264,21 @@ export default component$(() => {
           <div>
             loading...
           </div>}
-            onResolved={(blogs) => (
+            onResolved={(ourNewsData) => (
             <div
               class="text-[2px]"
                 >
-                {blogs && blogs.map(blog => (
+                {ourNewsData && ourNewsData.map(news => (
                 <div
                   
-                  key={blog.id}
+                  key={news.id}
                   >
-                    <soan>{blog.user_id}</soan>
-                    <h3>{blog.title}</h3>
-                    <p>{blog.body.slice(0, 50)}...</p>
+                    <soan>{news.user_id}</soan>
+                    <h3>{news.title}</h3>
+                    <p>{news.body.slice(0, 50)}...</p>
                     <div>
                       <Link 
-                      href={`/blog/${blog.id}`}
+                      href={`/blog/${news.id}`}
                       
                       >
                         More info
@@ -291,11 +296,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Welcome to Qwik",
+  title: "Love Space Shop",
   meta: [
     {
       name: "description",
-      content: "Qwik site description",
+      content: "Embrace your desires with sex toys from Love Space Shop",
     },
   ],
 };
