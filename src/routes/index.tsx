@@ -89,11 +89,11 @@ export default component$(() => {
   const bestSellesData = useBestSellesData<BestSellesData>();
   const newProductsData = useNewProductsData<BeastSellesData>();
   const ourNewsData = useOurNewsData<NewsData>();
+  const topseler = true;
   return (
     <div>
       <Hero/>
       <div class="max-w-container">
-        {/*
         <div class="bestSellesContainer flex flex-col gap-10 xs:pt-[44px] xs:pb-[53px] mdl:pt-[43.67px] mdl:pb-[41.33px] xs:px-auto mdl:px-7 lg:py-[75.4px] lg:px-10">
           <div>
             <h2
@@ -110,23 +110,28 @@ export default component$(() => {
           </div>}
             onResolved={(sellesProduct) => (
             <div
-              class="grid gap-2 xs:grid-cols-2 mdl:grid-cols-4"
+              class="grid gap-2 xs:grid-cols-2 mdl:grid-cols-4 xs:mx-[10px] mdl:mx-[28px] xl:mx-[40px]"
                 >
                 {sellesProduct && sellesProduct.map(product => (
-                  <section
+                  <div
                   key={product.id}
-                  class="hoverLinkParent flex flex-col gap-3"
+                  class="hoverLinkParent relative"
                   >
+                    {
+                      topseler && (
+                      <p
+                      class="z-50 absolute top-4 left-6 text-sm py-[1px] px-2 rounded-3xl bg-[#E7414B] text-white"
+                      >
+                        Top Seler
+                      </p>
+                      )
+                    }
                     <div
-                      class="bg-white flex flex-col overflow-hidden xs:min-w-[146px] mdl:min-w-[172px] lg:min-h-[230px] lg:min-w-[294px] lg:min-h-[298px] rounded-3xl"
+                      class="bg-white flex flex-col overflow-hidden xs:rounded-xl mdl:rounded-2xl lg:rounded-3xl"
                         >
-                          <div
-                          class="z-50 flex justify-end"
-                          >
                               <FavoritesIcon
-                              class="mdl:mr-[8px] lg:mr-[18px] lg:mt-2"
+                              class="z-50 absolute top-2 right-2"
                               />
-                          </div>
                           <div
                           class="mx-auto"
                           >
@@ -135,31 +140,25 @@ export default component$(() => {
                               width={800}
                               height={600}
                               loading="lazy" 
-                              class="xs:mdl:w-[125px] xs:h-[125px] mdl:w-[172px] mdl:h-[174px] lg:w-[202px] lg:h-[202px] object-cover" 
+                              class="object-cover" 
                               src={product.img} 
                               alt="productImg"
                                 />
                           </div>
-                          <div
-                              class="flex items-end justify-end min-w-[190px] min-h-[60px]"
+                            <Link 
+                              class="linkToShow absolute xs:top-[110px] sm:top-[135px] sml:top-[190px] mdl:top-[135px] lg:top-[190px] lgl:top-[220px] xl:top-[240px] right-0 text-mainBg xs:p-1 xs:rounded-lg rounded-xl bg-accentBg mr-[18px] mb-[14px] z-50 text-[14px] flex lg:gap-[10px] items-center justify-center "
+                              href={`/`}
                               >
-                                  
-                                    
-            
-                                      <Link 
-                                      class="linkToShow text-mainBg p-3 rounded-xl bg-accentBg mr-[18px] mb-[14px] z-50 text-[14px] flex gap-[10px] items-center justify-center "
-                                      href={`/`}
-                                  >
-                                    <span
-                                    class="xs:hidden lg:inline"
-                                    >Lägg till i kundvagn</span>
-                                    <LightBasket/>
-                                  </Link>
-                                
-                              </div>
+                              <span
+                                class="xs:hidden lg:inline"
+                                >
+                                  Lägg till i kundvagn
+                              </span>
+                              <LightBasket/>
+                            </Link>
                     </div>
                     <div
-                    class="sectionText text-base flex flex-col gap-2 max-w-[294px] min-h-[44px]"
+                    class="sectionText text-base flex flex-col gap-2 mt-6 max-w-[294px] min-h-[44px]"
                     >
                         <h3
                         class="xs:text-[14px] lg:text-[16px]"
@@ -170,7 +169,7 @@ export default component$(() => {
                       <div>
                       </div>
                     </div>
-                </section>
+                </div>
               ))}
         </div>
       )}
@@ -179,13 +178,14 @@ export default component$(() => {
       </div>
       <Middleframe/>
       //Categories
-      </div>
-      <div class="bestSellesContainer flex flex-col gap-10 py-[75.4px] px-10">
+      
+      <div class="max-w-container">
+        <div class="bestSellesContainer flex flex-col gap-10 xs:pt-[44px] xs:pb-[53px] mdl:pt-[43.67px] mdl:pb-[41.33px] xs:px-auto mdl:px-7 lg:py-[75.4px] lg:px-10">
           <div>
             <h2
             class="sectionTitle"
             >
-              New products
+              News products
             </h2>
           </div>
         <Resource
@@ -196,23 +196,28 @@ export default component$(() => {
           </div>}
             onResolved={(sellesProduct) => (
             <div
-              class="grid gap-2 lgl:grid-cols-4"
+              class="grid gap-2 xs:grid-cols-2 mdl:grid-cols-4 xs:mx-[10px] mdl:mx-[28px] xl:mx-[40px]"
                 >
                 {sellesProduct && sellesProduct.map(product => (
-                  <section
+                  <div
                   key={product.id}
-                  class="hoverLinkParent flex flex-col gap-3"
+                  class="hoverLinkParent relative"
                   >
+                    {
+                      topseler && (
+                      <p
+                      class="z-50 absolute top-4 left-6 text-sm py-[1px] px-2 rounded-3xl bg-[#E7414B] text-white"
+                      >
+                        Top Seler
+                      </p>
+                      )
+                    }
                     <div
-                      class="bg-white flex flex-col overflow-hidden min-w-[294px] min-h-[298px] rounded-3xl"
+                      class="bg-white flex flex-col overflow-hidden xs:rounded-xl mdl:rounded-2xl lg:rounded-3xl"
                         >
-                          <div
-                          class="z-50 flex justify-end"
-                          >
                               <FavoritesIcon
-                              class="mr-[18px] mt-3"
+                              class="z-50 absolute top-2 right-2"
                               />
-                          </div>
                           <div
                           class="mx-auto"
                           >
@@ -221,43 +226,42 @@ export default component$(() => {
                               width={800}
                               height={600}
                               loading="lazy" 
-                              class=" w-[202px] h-[202px] object-cover" 
+                              class="object-cover" 
                               src={product.img} 
                               alt="productImg"
                                 />
                           </div>
-                          <div
-                              class="flex items-end justify-end min-w-[190px] min-h-[60px]"
+                            <Link 
+                              class="linkToShow absolute xs:top-[110px] sm:top-[135px] sml:top-[190px] mdl:top-[135px] lg:top-[190px] lgl:top-[220px] xl:top-[240px] right-0 text-mainBg xs:p-1 xs:rounded-lg rounded-xl bg-accentBg mr-[18px] mb-[14px] z-50 text-[14px] flex lg:gap-[10px] items-center justify-center "
+                              href={`/`}
                               >
-                                  
-                                    
-            
-                                      <Link 
-                                      class="linkToShow text-mainBg p-3 rounded-xl bg-accentBg mr-[18px] mb-[16px] z-50 text-[14px] flex gap-[10px] items-center justify-center "
-                                      href={`/`}
-                                  >
-                                    <span>Lägg till i kundvagn</span>
-                                    <LightBasket/>
-                                  </Link>
-                                
-                              </div>
+                              <span
+                                class="xs:hidden lg:inline"
+                                >
+                                  Lägg till i kundvagn
+                              </span>
+                              <LightBasket/>
+                            </Link>
                     </div>
                     <div
-                    class="sectionText text-base flex flex-col gap-2 max-w-[294px] min-h-[44px]"
+                    class="sectionText text-base flex flex-col gap-2 mt-6 max-w-[294px] min-h-[44px]"
                     >
-                        <h3>{product.title}</h3>
+                        <h3
+                        class="xs:text-[14px] lg:text-[16px]"
+                        >{product.title}</h3>
                         <p
                         class="priceText"
                         >{product.price} грн</p>
                       <div>
                       </div>
                     </div>
-                </section>
+                </div>
               ))}
         </div>
       )}
       />
         </div>
+      </div>
       <div class="ourNewsContainer">
       <Resource
           value={ourNewsData}
@@ -290,9 +294,7 @@ export default component$(() => {
         </div>
       )}
       />
-      */}
-      </div>
-                
+      </div>        
       <Meinfaq/>
     </div>
   );
