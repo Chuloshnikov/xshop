@@ -12,6 +12,7 @@ import { Image } from '@unpic/qwik';
 
 //test data
 import bestSellesDataTest from "../../data/index";
+import Categories from "~/components/starter/categories/categories";
 
 interface BestSellesData {
   id: number,
@@ -97,7 +98,7 @@ export default component$(() => {
         <div class="bestSellesContainer flex flex-col gap-10 xs:pt-[44px] xs:pb-[53px] mdl:pt-[43.67px] mdl:pb-[41.33px] xs:px-auto mdl:px-7 lg:py-[75.4px] lg:px-10">
           <div>
             <h2
-            class="sectionTitle"
+            class="sectionTitle px-[10px]"
             >
               Best sellers
             </h2>
@@ -176,14 +177,15 @@ export default component$(() => {
       />
         </div>
       </div>
-      <Middleframe/>
-      //Categories
-      
+      <div class="max-w-container">
+        <Middleframe/>
+        <Categories/>
+      </div>
       <div class="max-w-container">
         <div class="bestSellesContainer flex flex-col gap-10 xs:pt-[44px] xs:pb-[53px] mdl:pt-[43.67px] mdl:pb-[41.33px] xs:px-auto mdl:px-7 lg:py-[75.4px] lg:px-10">
           <div>
             <h2
-            class="sectionTitle"
+            class="sectionTitle px-[10px]"
             >
               News products
             </h2>
