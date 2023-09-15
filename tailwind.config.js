@@ -21,6 +21,7 @@ module.exports = {
       colors: {
         mainBg: "#FDF8F6",
         accentBg: "#582467",
+        accentBg2: "#B686C3",
       }
     },
   },

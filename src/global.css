@@ -22,6 +22,20 @@ body {
   line-height: inherit;
 }
 
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 .sectionTitle {
   @apply text-[#582467] xs:text-[26px] xs:text-[36px] lg:text-[46px] font-medium leading-9
 }
@@ -53,4 +67,6 @@ body {
 .hoverLinkParent:hover img {
   transform: scale(1.282);
 }
+
+
 
