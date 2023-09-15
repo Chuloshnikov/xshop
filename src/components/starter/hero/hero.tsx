@@ -5,7 +5,7 @@ import ScrollDown from "../../../media/icons/ScrollDown.svg?jsx";
 
 export default component$(() => {
   return (
-    <div class="xs:w-min-[320px] xs:h-[590px] mdl:min-w-[768px] lg:max-w-[960px] mdl:min-h-[529px] lg:max-w-[1280px] lg:h-[573px]">
+    <div class="xs:w-min-[320px] xs:h-[590px] mdl:min-w-[768px] lg:min-w-[960px] mdl:min-h-[529px] lg:min-w-[1280px] lg:h-[573px]">
       <div 
       class="z-1 relative w-full h-full text-center rounded-b-3xl"
       >
