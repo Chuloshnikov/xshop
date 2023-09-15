@@ -2,8 +2,12 @@ import { component$ } from "@builder.io/qwik";
 import HeroImage from "../../../media/images/heroImage.jpg?jsx";
 import ScrollDown from "../../../media/icons/ScrollDown.svg?jsx";
 
+interface ButtonProps {
+  toDown: PropFunction<() => void>
+}
 
-export default component$(() => {
+export default component$((props: ButtonProps) => {
+
   return (
     <div class="xs:w-min-[320px] xs:h-[590px] mdl:min-w-[768px] lg:min-w-[960px] mdl:min-h-[529px] lg:min-w-[1280px] lg:h-[573px]">
       <div 
@@ -31,6 +35,7 @@ export default component$(() => {
             Revitalize your senses, and unleash your inner passions with our high-quality products for intimate experiences.
           </p>
           <button
+          onClick$={props.toDown}
           class="mx-auto"
           >
             <ScrollDown/>

@@ -1,4 +1,4 @@
-import { component$, Resource, useResource$} from "@builder.io/qwik";
+import { component$, Resource, useResource$,  $ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { routeLoader$ } from '@builder.io/qwik-city';
 import Hero from "~/components/starter/hero/hero";
@@ -91,9 +91,26 @@ export default component$(() => {
   const newProductsData = useNewProductsData<BeastSellesData>();
   const ourNewsData = useOurNewsData<NewsData>();
   const topseler = true;
+
+  const smoothScrollToBottom = $(() => {
+    const totalHeight = document.documentElement.scrollHeight;
+    const step = totalHeight / 100;
+    let currentPosition = window.scrollY || window.pageYOffset;
+  
+    const scrollStep = () => {
+        if (currentPosition < totalHeight - window.innerHeight) { 
+            currentPosition += step;
+            window.scrollTo(0, currentPosition);
+            requestAnimationFrame(scrollStep);
+        }
+    }
+  
+    requestAnimationFrame(scrollStep);
+  })
+
   return (
     <div>
-      <Hero/>
+      <Hero toDown={smoothScrollToBottom}/>
       <div class="max-w-container">
         <div class="bestSellesContainer flex flex-col gap-10 xs:pt-[44px] xs:pb-[53px] mdl:pt-[43.67px] mdl:pb-[41.33px] xs:px-auto mdl:px-7 lg:py-[75.4px] lg:px-10">
           <div>
