@@ -187,7 +187,7 @@ export default component$(() => {
             <h2
             class="sectionTitle px-[10px]"
             >
-              News products
+              New products
             </h2>
           </div>
         <Resource
