@@ -8,7 +8,7 @@ export default component$(() => {
   return (
     <section class="relative flex xs:flex-col sm:items-center md:items-start md:flex-row xs:gap-[38px] md:gap-0 md:justify-between md:mx-7 xs:mx-[10px] pb-[47px]">
         <div
-        class="lg:flex lg:flex-col lg:gap-[225px] mdl:ml-8 lg:ml-10 xl:ml-12"
+        class="lg:flex lg:flex-col lg:gap-[225px] mdl:ml-8"
         >
             <div>
                 <p

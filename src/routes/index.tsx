@@ -111,7 +111,7 @@ export default component$(() => {
           </div>}
             onResolved={(sellesProduct) => (
             <div
-              class="grid gap-2 xs:grid-cols-2 mdl:grid-cols-4 xs:mx-[10px] mdl:mx-[28px] xl:mx-[40px]"
+              class="grid gap-2 xs:grid-cols-2 mdl:grid-cols-4 xs:mx-[10px] mdl:mx-[18px] xl:mx-[40px]"
                 >
                 {sellesProduct && sellesProduct.map(product => (
                   <div
@@ -198,7 +198,7 @@ export default component$(() => {
           </div>}
             onResolved={(sellesProduct) => (
             <div
-              class="grid gap-2 xs:grid-cols-2 mdl:grid-cols-4 xs:mx-[10px] mdl:mx-[28px] xl:mx-[40px]"
+              class="grid gap-2 xs:grid-cols-2 mdl:grid-cols-4 xs:mx-[10px] mdl:mx-[18px] xl:mx-[40px]"
                 >
                 {sellesProduct && sellesProduct.map(product => (
                   <div
