@@ -135,25 +135,29 @@ export default component$((props: ButtonProps) => {
       </div>
         {/* links and upbutton end*/}
         <div
-        class="text-sm text-accentBg2 flex flex-col text-center mt-[52px]"
+        class="relative text-sm text-accentBg2 flex flex-col mdl:gap-[31px] text-center mt-[52px]"
         >
           <div
-          class="flex justify-evenly"
+          class="flex lg:text-base xs:justify-evenly mdl:justify-center mdl:gap-[50px] xl:absolute xl:right-[38%]"
           >
             <p>Terms of Use</p>
             <p>Privacy Policy</p>
           </div>
           <div
-          class="mt-7"
+          class="flex xs:flex-col mdl:flex-row-reverse mdl:justify-between mdl:px-14 lg:px-8"
           >
-            <p
-            class="text-xs"
-            >Designed by Kolodiazhenskyi</p>
-          </div>
-          <div
-          class="text-xs mt-7"
-          >
-            <p>© 2023 | LoveSpace | All Rights Reserved</p>
+            <div
+            class="xs:mt-7 mdl:mt-0"
+            >
+              <p
+              class="text-xs lg:text-base"
+              >Designed by Kolodiazhenskyi</p>
+            </div>
+            <div
+            class="text-xs lg:text-base xs:mt-7 mdl:mt-0"
+            >
+              <p>© 2023 | LoveSpace | All Rights Reserved</p>
+            </div>
           </div>
         </div>
       </div>
