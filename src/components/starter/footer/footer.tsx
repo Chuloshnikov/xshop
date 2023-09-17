@@ -83,7 +83,7 @@ export default component$(() => {
           {/* form and icons ens*/}
         {/* links and upbutton start*/}
         <div
-        class="px-4 mdl:px-6 lg:px-8 flex xs:gap-3 mdl:gap-[140px] sm:justify-between" 
+        class="px-4 lg:px-8 flex xs:gap-3 xl:gap-[140px] sm:justify-between" 
         >
           <div
           class="flex xs:gap-11 mdl:gap-[85px] lg:gap-[111px] text-sm xs:mt-[44px] mdl:pt-[100px] lg:pt-[32px] lg:mt-0"

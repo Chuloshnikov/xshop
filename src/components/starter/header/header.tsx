@@ -11,7 +11,7 @@ import MenuIcon from '../../../media/icons/menuIcon.svg?jsx';
 export default component$(() => {
   return (
     <header
-    class="fixed z-50 bg-mainBg xs:max-w-[300px] mdl:max-w-[704px] lg:max-w-[920px] xl:max-w-[1237px] w-full xs:py-[15px] xs:px-[18px] xl:p-3 rounded-xl mt-[21px] mx-auto"
+    class="fixed z-50 bg-mainBg xs:max-w-[300px] mdl:max-w-[704px] lg:min-w-[940px] lgl:min-w[1010px] xl:max-w-[1237px] w-full xs:py-[15px] xs:px-[18px] xl:p-3 rounded-xl mt-[21px] mx-auto"
     >
       <nav class="flex justify-between p-2">
         <div>
