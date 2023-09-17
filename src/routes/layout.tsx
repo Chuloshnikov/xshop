@@ -1,29 +1,28 @@
-import { component$, Slot } from "@builder.io/qwik";
-import { routeLoader$ } from "@builder.io/qwik-city";
-import type { RequestHandler } from "@builder.io/qwik-city";
+import { component$, Slot, $ } from "@builder.io/qwik";
+
 
 import Header from "~/components/starter/header/header";
 import Footer from "~/components/starter/footer/footer";
 
 
-export const onGet: RequestHandler = async ({ cacheControl }) => {
-  // Control caching for this request for best performance and to reduce hosting costs:
-  // https://qwik.builder.io/docs/caching/
-  cacheControl({
-    // Always serve a cached response by default, up to a week stale
-    staleWhileRevalidate: 60 * 60 * 24 * 7,
-    // Max once every 5 seconds, revalidate on the server to get a fresh version of this page
-    maxAge: 5,
-  });
-};
-
-export const useServerTimeLoader = routeLoader$(() => {
-  return {
-    date: new Date().toISOString(),
-  };
-});
 
 export default component$(() => {
+
+  const smoothScrollToTop = $(() => {
+    const step = document.documentElement.scrollHeight / 100;
+    let currentPosition = window.scrollY || window.pageYOffset;
+  
+    const scrollStep = () => {
+        if (currentPosition > 0) { 
+            currentPosition -= step; // Ми зменшуємо позицію, щоб рухатися вгору
+            window.scrollTo(0, currentPosition);
+            requestAnimationFrame(scrollStep);
+        }
+    }
+  
+    requestAnimationFrame(scrollStep);
+});
+
   return (
     <>
     <div 
@@ -33,7 +32,7 @@ export default component$(() => {
       <main>
         <Slot />
       </main>
-      <Footer />
+      <Footer toUp={smoothScrollToTop}/>
     </div>
       
     </>
