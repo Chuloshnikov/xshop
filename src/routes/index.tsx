@@ -7,12 +7,15 @@ import Middleframe from "~/components/starter/middleFrame/middleframe";
 import Meinfaq from "~/components/starter/meinFaq/meinfaq";
 import LightBasket from "../media/icons/lightBascet.svg?jsx";
 import FavoritesIcon from '../media/icons/Favorites.svg?jsx';
+import TimeIcon from "../media/icons/TimeIcon.svg?jsx";
 import { Image } from '@unpic/qwik';
-
+import Categories from "~/components/starter/categories/categories";
+import ReadAllIcon from "../media/icons/ReadAllIcon.svg?jsx"
 
 //test data
-import bestSellesDataTest from "../../data/index";
-import Categories from "~/components/starter/categories/categories";
+import {bestSellesDataTest, newsDataTest} from "../../data/index";
+
+
 
 interface BestSellesData {
   id: number,
@@ -25,8 +28,10 @@ interface NewsData {
   id: numder,
   img: string,
   title: string,
+  text: string,
   date: string,
   time: string,
+  topic: string
 }
 
 export const useBestSellesData = routeLoader$(async (requestEvent) => {
@@ -281,38 +286,70 @@ export default component$(() => {
       />
         </div>
       </div>
-      <div class="ourNewsContainer">
-      <Resource
-          value={ourNewsData}
+      <div class="max-w-container">
+        <div class="ourNewsContainer flex flex-col gap-10 xs:pt-[44px] xs:pb-[53px] mdl:pt-[43.67px] mdl:pb-[41.33px] xs:px-auto mdl:px-7 lg:py-[75.4px] lg:px-10">
+            <div
+            class="flex justify-between items-center px-[10px]"
+            >
+              <h2
+              class="sectionTitle"
+              >
+                Our News
+              </h2>
+              <Link
+              href="/news"
+              class="text-base text-accentBg xs:py-1 sm:py-2 xs:px-3 sm:px-5 flex items-center rounded-3xl gap-4 bg-ahornBg"
+              >
+                <span>Read All</span>
+                <ReadAllIcon/>
+              </Link>
+            </div>
+            <Resource
+          value={newsDataTest}
           onPending={() => 
           <div>
             loading...
           </div>}
-            onResolved={(ourNewsData) => (
+            onResolved={(newsDataTest) => (
             <div
-              class="text-[2px]"
+              class="text-[16px]"
                 >
-                {ourNewsData && ourNewsData.map(news => (
+                {newsDataTest && newsDataTest.map(news => (
                 <div
-                  
+                class="flex flex-col gap-4"
                   key={news.id}
                   >
-                    <soan>{news.user_id}</soan>
-                    <h3>{news.title}</h3>
-                    <p>{news.body.slice(0, 50)}...</p>
                     <div>
-                      <Link 
-                      href={`/blog/${news.id}`}
-                      
-                      >
-                        More info
-                      </Link>
+                        <Image  
+                        layout="constrained" 
+                        width={800}
+                        height={600}
+                        loading="lazy" 
+                        class="object-cover" 
+                        src={news.img} 
+                        alt="productImg"
+                        />
                     </div>
+                  <div
+                    class="text-accentBg2 xs:text-sm mdl:text-base flex gap-3"
+                    >
+                      <span>{news.date}</span>
+                      <span>|</span>
+                      <div
+                      class="flex gap-2"
+                      ><TimeIcon/> <span>{news.time}</span></div>
+                  </div>
+                  <h3
+                    class="text-accentBg font-normal text-[17px]"
+                    >
+                    {news.title}
+                  </h3>
                 </div>
               ))}
         </div>
       )}
       />
+        </div>
       </div>        
       <Meinfaq/>
     </div>
