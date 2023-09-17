@@ -18,7 +18,7 @@ export default component$((props: ButtonProps) => {
   
 
   return (
-    <footer class="w-full xs:px-[10px] mdl:px-[32px]">
+    <footer class="w-full max-w-[1237px] xs:px-[10px] mdl:px-[32px]">
       <div 
       class="rounded-3xl bg-accentBg text-mainBg xs:mb-[17px] mdl:mb-[22px] xl:mb-[24px] pb-5"
       >
