@@ -1,5 +1,4 @@
-import { component$ } from "@builder.io/qwik";
-import { useServerTimeLoader } from "~/routes/layout";
+import { component$, $ } from "@builder.io/qwik";
 import InstagramIcon from "../../../media/icons/InstagramIcon.svg?jsx";
 import TwitterIcon from "../../../media/icons/TwitterIcon.svg?jsx";
 import TiktokIcon from "../../../media/icons/TiktokIcon.svg?jsx";
@@ -8,8 +7,15 @@ import LinkedinIcon from "../../../media/icons/LinkedinIcon.svg?jsx";
 import UpButton from "../../../media/icons/UpButton.svg?jsx";
 import { Link } from "@builder.io/qwik-city";
 
-export default component$(() => {
-  const serverTime = useServerTimeLoader();
+
+interface ButtonProps {
+  toDown: PropFunction<() => void>
+}
+
+
+export default component$((props: ButtonProps) => {
+
+  
 
   return (
     <footer class="w-full xs:px-[10px] mdl:px-[32px]">
@@ -120,7 +126,9 @@ export default component$(() => {
           class="flex flex-col justify-end items-end"
           >
             <div>
-              <UpButton/>
+              <UpButton
+              onClick$={props.toUp}
+              />
             </div>
           </div>
         </div>
