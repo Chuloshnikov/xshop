@@ -138,7 +138,7 @@ export default component$(() => {
                     {
                       topseler && (
                       <p
-                      class="z-50 absolute top-4 left-6 text-sm py-[1px] px-2 rounded-3xl bg-[#E7414B] text-white"
+                      class="z-30 absolute top-4 left-6 text-sm py-[1px] px-2 rounded-3xl bg-[#E7414B] text-white"
                       >
                         Top Seler
                       </p>
@@ -225,7 +225,7 @@ export default component$(() => {
                     {
                       topseler && (
                       <p
-                      class="z-50 absolute top-4 left-6 text-sm py-[1px] px-2 rounded-3xl bg-[#E7414B] text-white"
+                      class="z-30 absolute top-4 left-6 text-sm py-[1px] px-2 rounded-3xl bg-[#E7414B] text-white"
                       >
                         Top Seler
                       </p>
