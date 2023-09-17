@@ -12,78 +12,81 @@ export default component$(() => {
   const serverTime = useServerTimeLoader();
 
   return (
-    <footer class="max-w-container xs:px-[10px]">
+    <footer class="w-full xs:px-[10px] mdl:px-[32px]">
       <div 
-      class="rounded-3xl bg-accentBg text-mainBg w-full w-full xs:mb-[17px] mdl:mb-[22px] xl:mb-[24px] pb-5"
+      class="rounded-3xl bg-accentBg text-mainBg xs:mb-[17px] mdl:mb-[22px] xl:mb-[24px] pb-5"
       >
-        {/* form and icons start*/}
         <div
-        class=""
+        class="flex xs:flex-col md:flex-row md:justify-between mdl:min-h-[400px]"
         >
-          {/*form title and icons start*/}
+          {/* form and icons start*/}
           <div
-          class="px-4 pt-[32px] flex flex-col gap-3"
+          class="max-w-full"
           >
-            
-            <p
-            class="xs:text-[18px]"
-            >Let&#039;s stay in touch.</p>
+            {/*form title and icons start*/}
             <div
-            class="z-15 border-accentBg2 border-[1px] rounded-3xl h-[41px] p-[2px]"
+            class="xs:px-4 mdl:px-0 mdl:ml-[48px] pt-[32px] flex flex-col gap-3 max-w-[349px]"
             >
-              <form
-              class="flex items-center justify-between text-center"
+              
+              <p
+              class="xs:text-[18px] lg:text-[40px]"
+              >Let&#039;s stay in touch.</p>
+              <div
+              class="z-15 border-accentBg2 border-[1px] rounded-3xl h-[41px] p-[2px]"
               >
-              <input
-                  class="bg-accentBg border-none text-accentBg2 text-[16px] ml-4 max-w-[146px] my-auto"
-                  type="text"
-                  placeholder="Email"
-                  />
-                  <button
-                  class="py-[10px] px-5 text-[14px] rounded-3xl bg-accentBg2"
-                  >
-                    Sign Up
-                  </button>
-              </form>
+                <form
+                class="flex items-center justify-between text-center"
+                >
+                <input
+                    class="bg-accentBg border-none text-accentBg2 text-[16px] ml-4 xs:max-w-[146px] sm:max-w-[230px] my-auto"
+                    type="text"
+                    placeholder="Email"
+                    />
+                    <button
+                    class="py-[10px] px-5 text-[14px] rounded-3xl bg-accentBg2"
+                    >
+                      Sign Up
+                    </button>
+                </form>
+              </div>
+              
             </div>
-            
-          </div>
-          <div
-          class="px-4 pt-[74px] flex flex-col gap-3"
-          >
-            <p
-            class="text-sm"
-            >
-              Följ oss
-            </p>
             <div
-            class="flex gap-[6.34px]"
+            class="xs:px-4 mdl:px-0 mdl:ml-[48px] xs:mt-[44px] mdl:mt-[31px] lg:mt-[143px] flex flex-col gap-3"
             >
-              <Link href="/">
-                <InstagramIcon/>
-              </Link>
-              <Link href="/">
-                <TwitterIcon/>
-              </Link>
-              <Link href="/">
-                <TiktokIcon/>
-              </Link>
-              <Link href="/">
-                <YoutubeIcon/>
-              </Link>
-              <Link href="/">
-                <LinkedinIcon/>
-              </Link>
+              <p
+              class="text-sm"
+              >
+                Följ oss
+              </p>
+              <div
+              class="flex gap-[6.34px]"
+              >
+                <Link href="/">
+                  <InstagramIcon/>
+                </Link>
+                <Link href="/">
+                  <TwitterIcon/>
+                </Link>
+                <Link href="/">
+                  <TiktokIcon/>
+                </Link>
+                <Link href="/">
+                  <YoutubeIcon/>
+                </Link>
+                <Link href="/">
+                  <LinkedinIcon/>
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-        {/* form and icons ens*/}
+          {/* form and icons ens*/}
         {/* links and upbutton start*/}
         <div
-        class="px-4 pt-[44px] flex gap-3" 
+        class="px-4 mdl:px-6 lg:px-8 flex xs:gap-3 mdl:gap-[140px] sm:justify-between" 
         >
           <div
-          class="flex gap-11 text-sm"
+          class="flex xs:gap-11 mdl:gap-[85px] lg:gap-[111px] text-sm xs:mt-[44px] mdl:pt-[100px] lg:pt-[32px] lg:mt-0"
           >
             <div
             class="flex flex-col"
@@ -121,6 +124,7 @@ export default component$(() => {
             </div>
           </div>
         </div>
+      </div>
         {/* links and upbutton end*/}
         <div
         class="text-sm text-accentBg2 flex flex-col text-center mt-[52px]"
