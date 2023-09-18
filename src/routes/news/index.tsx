@@ -1,7 +1,7 @@
 import { component$, useSignal, useStore } from "@builder.io/qwik";
 
 interface NewsData {
-    id: numder,
+    id: number,
     img: string,
     title: string,
     text: string,
@@ -23,7 +23,7 @@ export const useAllNewsData = routeLoader$(async (requestEvent: any) => {
   
         const data = await res.json();
         return data;
-    } catch (error) {
+    } catch (error: any) {
         console.error("An error occurred:", error);
         return { error: error.message || 'An unexpected error occurred' };
     }
