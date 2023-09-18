@@ -1,19 +1,21 @@
 import { component$, useSignal, useStore } from "@builder.io/qwik";
+import { routeLoader$ } from '@builder.io/qwik-city';
+
 
 interface ProductData {
-    id: numder,
+    id: number,
     img: string,
     title: string,
     reviewRate: number,
     existigVario: [{img: string, text: string, price: number}],
     description: string,
     specification: string,
-    reviews: [{reviewRate: number, revievText: string, revievDate: string}],
+    reviews: [{reviewRate: number, reviewText: string, reviewDate: string}],
     price: number
 
   }
 
-export const useAllProductsData = routeLoader$(async (requestEvent) => {
+export const useAllProductsData = routeLoader$(async (requestEvent: any) => {
     console.log('fetching the data');
     //new products fetching
     try {
