@@ -323,16 +323,16 @@ export default component$(() => {
                       >
                       {newsDataTest && newsDataTest.map(news => (
                       <div
-                      class="text-[16px] flex flex-col xs:h-[388px] lg:h-[454px]"
+                      class="text-[16px] flex flex-col gap-2 xs:h-[388px] lg:h-[454px]"
                         key={news.id}
                         >
                           <div
-                          class="relative xs:w-[273px] lg:w-[394px] xs:h-[301px] lg:h-[341px] rounded-[30px]"
+                          class="relative xs:w-[273px] lg:w-[384px] xs:h-[301px] lg:h-[341px] rounded-[30px]"
                           >
                               <Image  
                               layout="constrained" 
-                              width={300}
-                              height={400}
+                              width={600}
+                              height={800}
                               loading="lazy" 
                               class="w-full h-full object-cover rounded-[30px]" 
                               src={news.img} 
