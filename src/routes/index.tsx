@@ -309,7 +309,7 @@ export default component$(() => {
               </Link>
             </div>
             <div
-            class="overflow-hidden"
+            class="max-w-container px-[10px] relative xs:h-[400px] lg:h-[454px] flex overflow-x-auto space-x-4"
             >
                 <Resource
                 value={newsDataTest}
@@ -319,25 +319,30 @@ export default component$(() => {
                 </div>}
                   onResolved={(newsDataTest) => (
                   <div
-                    class="text-[16px] flex flex-col gap-2"
+                    class="flex flex gap-2 flex-shrink-0 absolute "
                       >
                       {newsDataTest && newsDataTest.map(news => (
                       <div
-                      class="flex flex-col gap-4 xs:h-[388px] lg:h-[454px]"
+                      class="text-[16px] flex flex-col xs:h-[388px] lg:h-[454px]"
                         key={news.id}
                         >
                           <div
-                          class="xs:max-w-[273px] xs:max-h-[341px] lg:max-w-[365px]"
+                          class="relative xs:w-[273px] lg:w-[394px] xs:h-[301px] lg:h-[341px] rounded-[30px]"
                           >
                               <Image  
                               layout="constrained" 
                               width={300}
                               height={400}
                               loading="lazy" 
-                              class="object-cover" 
+                              class="w-full h-full object-cover rounded-[30px]" 
                               src={news.img} 
                               alt="NewsImg"
                               />
+                              <span
+                              class="absolute top-3 left-5 text-base text-accentBg bg-mainBg text-center py-1 font-normal px-6 rounded-3xl"
+                              >
+                                  {news.topic}
+                              </span>
                           </div>
                         <div
                           class="text-accentBg2 xs:text-sm mdl:text-base flex gap-3"
@@ -349,7 +354,7 @@ export default component$(() => {
                             ><TimeIcon/> <span>{news.time}</span></div>
                         </div>
                         <h3
-                          class="text-accentBg font-normal text-[17px]"
+                          class="text-accentBg font-normal text-[17px] xs:w-[274px] lg:w-[365px]"
                           >
                           {news.title}
                         </h3>
@@ -360,7 +365,9 @@ export default component$(() => {
             />
             </div>
         </div>
-      </div>        
+        
+      </div> 
+             
       <Meinfaq/>
     </div>
   );
