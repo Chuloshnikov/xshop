@@ -10,7 +10,7 @@ interface NewsData {
     topic: string
   }
 
-export const useAllNewsData = routeLoader$(async (requestEvent) => {
+export const useAllNewsData = routeLoader$(async (requestEvent: any) => {
     console.log('fetching the data');
     //new products fetching
     try {
@@ -31,7 +31,7 @@ export const useAllNewsData = routeLoader$(async (requestEvent) => {
   
 
 export default component$(() => {
-    const allNews = useAllNewsData<PNewsData>();
+    const allNews = useAllNewsData<NewsData>();
 
     return (
         <article
