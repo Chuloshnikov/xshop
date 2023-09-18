@@ -304,51 +304,57 @@ export default component$(() => {
                 <ReadAllIcon/>
               </Link>
             </div>
-            <Resource
-          value={newsDataTest}
-          onPending={() => 
-          <div>
-            loading...
-          </div>}
-            onResolved={(newsDataTest) => (
             <div
-              class="text-[16px]"
-                >
-                {newsDataTest && newsDataTest.map(news => (
-                <div
-                class="flex flex-col gap-4"
-                  key={news.id}
-                  >
-                    <div>
-                        <Image  
-                        layout="constrained" 
-                        width={800}
-                        height={600}
-                        loading="lazy" 
-                        class="object-cover" 
-                        src={news.img} 
-                        alt="productImg"
-                        />
-                    </div>
+            class="overflow-hidden"
+            >
+                <Resource
+                value={newsDataTest}
+                onPending={() => 
+                <div>
+                  loading...
+                </div>}
+                  onResolved={(newsDataTest) => (
                   <div
-                    class="text-accentBg2 xs:text-sm mdl:text-base flex gap-3"
-                    >
-                      <span>{news.date}</span>
-                      <span>|</span>
+                    class="text-[16px] flex flex-col gap-2"
+                      >
+                      {newsDataTest && newsDataTest.map(news => (
                       <div
-                      class="flex gap-2"
-                      ><TimeIcon/> <span>{news.time}</span></div>
-                  </div>
-                  <h3
-                    class="text-accentBg font-normal text-[17px]"
-                    >
-                    {news.title}
-                  </h3>
-                </div>
-              ))}
-        </div>
-      )}
-      />
+                      class="flex flex-col gap-4 xs:h-[388px] lg:h-[454px]"
+                        key={news.id}
+                        >
+                          <div
+                          class="xs:max-w-[273px] xs:max-h-[341px] lg:max-w-[365px]"
+                          >
+                              <Image  
+                              layout="constrained" 
+                              width={300}
+                              height={400}
+                              loading="lazy" 
+                              class="object-cover" 
+                              src={news.img} 
+                              alt="NewsImg"
+                              />
+                          </div>
+                        <div
+                          class="text-accentBg2 xs:text-sm mdl:text-base flex gap-3"
+                          >
+                            <span>{news.date}</span>
+                            <span>|</span>
+                            <div
+                            class="flex gap-2"
+                            ><TimeIcon/> <span>{news.time}</span></div>
+                        </div>
+                        <h3
+                          class="text-accentBg font-normal text-[17px]"
+                          >
+                          {news.title}
+                        </h3>
+                      </div>
+                    ))}
+              </div>
+            )}
+            />
+            </div>
         </div>
       </div>        
       <Meinfaq/>
