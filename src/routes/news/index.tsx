@@ -1,4 +1,5 @@
 import { component$, useSignal, useStore } from "@builder.io/qwik";
+import { routeLoader$ } from '@builder.io/qwik-city';
 
 interface NewsData {
     id: number,
