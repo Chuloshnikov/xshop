@@ -11,6 +11,8 @@ interface NewsData {
     topic: string
   }
 
+{/*
+
 export const useAllNewsData = routeLoader$(async (requestEvent: any) => {
     console.log('fetching the data');
     //new products fetching
@@ -29,10 +31,11 @@ export const useAllNewsData = routeLoader$(async (requestEvent: any) => {
         return { error: error.message || 'An unexpected error occurred' };
     }
   });
-  
+*/}
+
 
 export default component$(() => {
-    const allNews = useAllNewsData<NewsData>();
+    //const allNews = useAllNewsData<NewsData>();
 
     return (
         <article

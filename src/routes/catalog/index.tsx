@@ -15,6 +15,9 @@ interface ProductData {
 
   }
 
+
+{/*
+
 export const useAllProductsData = routeLoader$(async (requestEvent: any) => {
     console.log('fetching the data');
     //new products fetching
@@ -33,7 +36,7 @@ export const useAllProductsData = routeLoader$(async (requestEvent: any) => {
         return { error: error.message || 'An unexpected error occurred' };
     }
   });
-  
+*/}
 
 export default component$(() => {
     const allProducts = useAllProductsData<ProductData>();
