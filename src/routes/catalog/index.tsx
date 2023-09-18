@@ -19,7 +19,7 @@ export const useAllProductsData = routeLoader$(async (requestEvent: any) => {
     console.log('fetching the data');
     //new products fetching
     try {
-        const res = await fetch('https://gorest.co.in/public/v2/posts/');
+        const res = await fetch('https://gorest.co.in/public/v2/');
   
         if (!res.ok) {
             console.error(`HTTP error! Status: ${res.status}`);

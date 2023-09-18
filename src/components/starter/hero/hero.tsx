@@ -3,7 +3,7 @@ import HeroImage from "../../../media/images/heroImage.jpg?jsx";
 import ScrollDown from "../../../media/icons/ScrollDown.svg?jsx";
 
 interface ButtonProps {
-  toDown: PropFunction<() => void>
+  toDown: () => void;
 }
 
 export default component$((props: ButtonProps) => {
