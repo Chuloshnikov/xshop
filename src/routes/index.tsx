@@ -169,7 +169,7 @@ export default component$(() => {
                                 />
                           </div>
                             <Link 
-                              class="linkToShow absolute xs:top-[110px] sm:top-[135px] sml:top-[190px] mdl:top-[135px] lg:top-[190px] lgl:top-[220px] xl:top-[240px] right-0 text-mainBg xs:p-1 xs:rounded-lg rounded-xl bg-accentBg mr-[18px] mb-[14px] z-50 text-[14px] flex lg:gap-[10px] items-center justify-center "
+                              class="z-30 linkToShow absolute xs:top-[110px] sm:top-[135px] sml:top-[190px] mdl:top-[135px] lg:top-[190px] lgl:top-[220px] xl:top-[240px] right-0 text-mainBg xs:p-1 xs:rounded-lg rounded-xl bg-accentBg mr-[18px] mb-[14px] text-[14px] flex lg:gap-[10px] items-center justify-center "
                               href={`/`}
                               >
                               <span
@@ -256,7 +256,7 @@ export default component$(() => {
                                 />
                           </div>
                             <Link 
-                              class="linkToShow absolute xs:top-[110px] sm:top-[135px] sml:top-[190px] mdl:top-[135px] lg:top-[190px] lgl:top-[220px] xl:top-[240px] right-0 text-mainBg xs:p-1 xs:rounded-lg rounded-xl bg-accentBg mr-[18px] mb-[14px] z-50 text-[14px] flex lg:gap-[10px] items-center justify-center "
+                              class="z-30 linkToShow absolute xs:top-[110px] sm:top-[135px] sml:top-[190px] mdl:top-[135px] lg:top-[190px] lgl:top-[220px] xl:top-[240px] right-0 text-mainBg xs:p-1 xs:rounded-lg rounded-xl bg-accentBg mr-[18px] mb-[14px]  text-[14px] flex lg:gap-[10px] items-center justify-center "
                               href={`/`}
                               >
                               <span

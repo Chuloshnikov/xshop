@@ -19,7 +19,7 @@ export default component$((props: ButtonProps) => {
   
 
   return (
-    <footer class="w-full max-w-[1237px] xs:px-[10px] mdl:px-[32px]">
+    <footer class="w-full max-w-[1267px] xs:px-[10px] mdl:px-[32px]">
       <div 
       class="rounded-3xl bg-accentBg text-mainBg xs:mb-[17px] mdl:mb-[22px] xl:mb-[24px] pb-5"
       >
@@ -32,25 +32,25 @@ export default component$((props: ButtonProps) => {
           >
             {/*form title and icons start*/}
             <div
-            class="xs:px-4 mdl:px-0 mdl:ml-[48px] pt-[32px] flex flex-col gap-3 max-w-[349px]"
+            class="xs:px-2 mdl:px-0 mdl:ml-[48px] pt-[32px] flex flex-col gap-3 max-w-[349px]"
             >
               
               <p
-              class="xs:text-[18px] lg:text-[40px]"
+              class="xs:text-[18px] lg:text-[36px]"
               >Let&#039;s stay in touch.</p>
               <div
-              class="z-15 border-accentBg2 border-[1px] rounded-3xl h-[41px] p-[2px]"
+              class="z-15 border-accentBg2 border-[1px] rounded-3xl h-[46px] p-[2px]"
               >
                 <form
                 class="flex items-center justify-between text-center"
                 >
                 <input
-                    class="bg-accentBg border-none text-accentBg2 text-[16px] ml-4 xs:max-w-[146px] sm:max-w-[230px] my-auto"
+                    class="bg-accentBg border-none text-accentBg2 text-[16px] ml-3 xs:max-w-[76px] sm:max-w-[230px]"
                     type="text"
                     placeholder="Email"
                     />
                     <button
-                    class="py-[10px] px-5 text-[14px] rounded-3xl bg-accentBg2"
+                    class="py-[12px] px-5 text-[14px] rounded-3xl bg-accentBg2"
                     >
                       Sign Up
                     </button>
