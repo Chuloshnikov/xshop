@@ -28,7 +28,7 @@ export const useAllProductsData = routeLoader$(async (requestEvent: any) => {
   
         const data = await res.json();
         return data;
-    } catch (error) {
+    } catch (error: any) {
         console.error("An error occurred:", error);
         return { error: error.message || 'An unexpected error occurred' };
     }

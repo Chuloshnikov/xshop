@@ -21,7 +21,7 @@ interface BestSellesData {
   id: number,
   img: string,
   title: string, 
-  price: numder,
+  price: number,
 }
 
 interface NewsData {
@@ -85,7 +85,7 @@ export const useOurNewsData = routeLoader$(async (requestEvent) => {
 
       const data = await res.json();
       return data;
-  } catch (error) {
+  } catch (error: any) {
       console.error("An error occurred:", error);
       return { error: error.message || 'An unexpected error occurred' };
   }
