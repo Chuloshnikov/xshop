@@ -34,6 +34,8 @@ interface NewsData {
   topic: string
 }
 
+{/*
+
 export const useBestSellesData = routeLoader$(async (requestEvent) => {
   console.log('fetching the data');
   //bestSeles fetching
@@ -91,10 +93,12 @@ export const useOurNewsData = routeLoader$(async (requestEvent) => {
   }
 });
 
+*/}
+
 export default component$(() => {
-  const bestSellesData = useBestSellesData<BestSellesData>();
-  const newProductsData = useNewProductsData<BeastSellesData>();
-  const ourNewsData = useOurNewsData<NewsData>();
+  //const bestSellesData = useBestSellesData<BestSellesData>();
+  //const newProductsData = useNewProductsData<BeastSellesData>();
+  //const ourNewsData = useOurNewsData<NewsData>();
   const topseler = true;
 
   const smoothScrollToBottom = $(() => {

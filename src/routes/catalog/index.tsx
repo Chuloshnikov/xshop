@@ -39,7 +39,7 @@ export const useAllProductsData = routeLoader$(async (requestEvent: any) => {
 */}
 
 export default component$(() => {
-    const allProducts = useAllProductsData<ProductData>();
+    //const allProducts = useAllProductsData<ProductData>();
 
     return (
         <article
