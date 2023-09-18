@@ -38,7 +38,7 @@ export const useBestSellesData = routeLoader$(async (requestEvent) => {
   console.log('fetching the data');
   //bestSeles fetching
   try {
-      const res = await fetch('https://gorest.co.in/public/v2/posts/');
+      const res = await fetch('https://gorest.co.in/public/v2/');
 
       if (!res.ok) {
           console.error(`HTTP error! Status: ${res.status}`);
@@ -57,7 +57,7 @@ export const useNewProductsData = routeLoader$(async (requestEvent) => {
   console.log('fetching the data');
   //new products fetching
   try {
-      const res = await fetch('https://gorest.co.in/public/v2/posts/');
+      const res = await fetch('https://gorest.co.in/public/v2/');
 
       if (!res.ok) {
           console.error(`HTTP error! Status: ${res.status}`);
@@ -76,7 +76,7 @@ export const useOurNewsData = routeLoader$(async (requestEvent) => {
   console.log('fetching the data');
   //bestSeles fetching
   try {
-      const res = await fetch('https://gorest.co.in/public/v2/posts/');
+      const res = await fetch('https://gorest.co.in/public/v2/');
 
       if (!res.ok) {
           console.error(`HTTP error! Status: ${res.status}`);
