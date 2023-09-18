@@ -25,7 +25,7 @@ interface BestSellesData {
 }
 
 interface NewsData {
-  id: numder,
+  id: number,
   img: string,
   title: string,
   text: string,
