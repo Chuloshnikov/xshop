@@ -16,7 +16,7 @@ export default component$(() => {
       <nav class="flex justify-between p-2">
         <div>
           <a href="/" title="qwik">
-            <LsLogo height={"41px"} width={"34px"} />
+            <LsLogo class="h-[41px] w-[34px]"/>
           </a>
         </div>
         <div

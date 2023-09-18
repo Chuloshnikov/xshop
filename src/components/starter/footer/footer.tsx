@@ -9,7 +9,7 @@ import { Link } from "@builder.io/qwik-city";
 
 
 interface ButtonProps {
-  toDown: PropFunction<() => void>
+  toUp: PropFunction<() => void>
 }
 
 
