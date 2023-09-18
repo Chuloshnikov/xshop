@@ -11,8 +11,15 @@ export default defineConfig(() => {
         "Cache-Control": "public, max-age=600",
       },
     },
-    typescript: {
-      ignoreBuildErrors: true,
-    }
+    build: {
+      rollupOptions: {
+        // ... інші опції rollup
+        onwarn: (warning, rollupWarn) => {
+          if (warning.code !== 'NON_EXISTENT_EXPORT' && warning.code !== 'UNUSED_EXTERNAL_IMPORT') {
+            rollupWarn(warning);
+          }
+        },
+      },
+    },
   };
 });
