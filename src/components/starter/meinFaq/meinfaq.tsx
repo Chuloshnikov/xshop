@@ -10,6 +10,7 @@ import FaqOpen from "../../../media/icons/FaqOpen.svg?jsx";
 import FaqClose from "../../../media/icons/FaqClose.svg?jsx";
 import ToContactsIcon from "../../../media/icons/ReadAllIcon.svg?jsx";
 import { Link } from "@builder.io/qwik-city";
+import FaqItem from "./FaqItem";
 
 
 
@@ -62,196 +63,75 @@ export default component$(() => {
                 <AccordionRoot
                 class="flex flex-col gap-3 xl:max-w-[475px]" 
                 >
-                    <AccordionItem>
-                    <AccordionHeader>
-                      <div
-                      class="flex xs:justify-between lg:gap-10"
-                      >
-                        <div
-                        class="text-accentBg xs:text-base mdl:text-xl font-medium xs:max-w-[212px] sml:max-w-full"
-                        >
-                          Love Space Shop - din guide till nöjes värld.
-                        </div>
-                        <AccordionTrigger>
-                          <span
-                          class="flex items-center justify-center p-1 rounded-full bg-accentBg2"
-                          >
-                            <FaqOpen/>
-                          </span>
-                        </AccordionTrigger>
-                      </div>
-                    </AccordionHeader>
-                    <AccordionContent
-                      class="py-3 xs:text-sm lg:text-base text-accentBg"
-                      >
-                      Welcome to Love Space Shop - an online sex toy store in Sweden, your ultimate destination for a wide variety of pleasure products.
+                    <FaqItem 
+                    title="Love Space Shop - din guide till nöjes värld." 
+                    text="Welcome to Love Space Shop - an online sex toy store in Sweden, your ultimate destination for a wide variety of pleasure products.
                       We take pride in offering an extensive selection of sex toys to cater to all your desires. Whether you're searching for a specific 
                       sex toy or want to explore our cheap sex toys supply, we have something for everyone. Get ready to indulge in pure pleasure as 
                       you buy sex toys and find the perfect sex toy to satisfy your deepest cravings!
                       Discover our vast collection of sex toys at unbeatable prices. Our sex toy store 
                       is dedicated to making pleasure affordable and accessible to all. With our sex toys 
-                      cheap offerings and exciting sale of sex toys, you can enhance your intim
-                    </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem>
-                    <AccordionHeader>
-                      <div
-                      class="flex justify-between"
-                      >
-                        <div
-                        class="text-accentBg xs:text-base mdl:text-xl font-medium xs:max-w-[212px]"
-                        >
-                          Confidentiality
-                        </div>
-                        <AccordionTrigger>
-                          <span
-                          class="flex items-center justify-center p-1 rounded-full bg-accentBg2"
-                          >
-                            <FaqOpen/>
-                          </span>
-                        </AccordionTrigger>
-                      </div>
-                    </AccordionHeader>
-                    <AccordionContent
-                      class="py-3 xs:text-sm lg:text-base text-accentBg"
-                      >
-                      Welcome to Love Space Shop - an online sex toy store in Sweden, your ultimate destination for a wide variety of pleasure products.
+                      cheap offerings and exciting sale of sex toys, you can enhance your intim"
+                      />
+                      <FaqItem
+                      title="Confidentiality"
+                      text="Welcome to Love Space Shop - an online sex toy store in Sweden, your ultimate destination for a wide variety of pleasure products.
                       We take pride in offering an extensive selection of sex toys to cater to all your desires. Whether you're searching for a specific 
                       sex toy or want to explore our cheap sex toys supply, we have something for everyone. Get ready to indulge in pure pleasure as 
                       you buy sex toys and find the perfect sex toy to satisfy your deepest cravings!
                       Discover our vast collection of sex toys at unbeatable prices. Our sex toy store 
                       is dedicated to making pleasure affordable and accessible to all. With our sex toys 
-                      cheap offerings and exciting sale of sex toys, you can enhance your intim
-                    </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem>
-                    <AccordionHeader>
-                      <div
-                      class="flex justify-between"
-                      >
-                        <div
-                        class="text-accentBg xs:text-base mdl:text-xl font-medium xs:max-w-[212px]"
-                        >
-                          LWe are dedicated to your satisfaction.
-                        </div>
-                        <AccordionTrigger>
-                          <span
-                          class="flex items-center justify-center p-1 rounded-full bg-accentBg2"
-                          >
-                            <FaqOpen/>
-                          </span>
-                        </AccordionTrigger>
-                      </div>
-                    </AccordionHeader>
-                    <AccordionContent
-                      class="py-3 xs:text-sm lg:text-base text-accentBg"
-                      >
-                      Welcome to Love Space Shop - an online sex toy store in Sweden, your ultimate destination for a wide variety of pleasure products.
+                      cheap offerings and exciting sale of sex toys, you can enhance your intim"
+                      />
+                      <FaqItem
+                      title="We are dedicated to your satisfaction."
+                      text="Welcome to Love Space Shop - an online sex toy store in Sweden, your ultimate destination for a wide variety of pleasure products.
                       We take pride in offering an extensive selection of sex toys to cater to all your desires. Whether you're searching for a specific 
                       sex toy or want to explore our cheap sex toys supply, we have something for everyone. Get ready to indulge in pure pleasure as 
                       you buy sex toys and find the perfect sex toy to satisfy your deepest cravings!
                       Discover our vast collection of sex toys at unbeatable prices. Our sex toy store 
                       is dedicated to making pleasure affordable and accessible to all. With our sex toys 
-                      cheap offerings and exciting sale of sex toys, you can enhance your intim
-                    </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem>
-                    <AccordionHeader>
-                      <div
-                      class="flex justify-between"
-                      >
-                        <div
-                        class="text-accentBg xs:text-base mdl:text-xl font-medium xs:max-w-[212px]"
-                        >
-                          Delivery
-                        </div>
-                        <AccordionTrigger>
-                          <span
-                          class="flex items-center justify-center p-1 rounded-full bg-accentBg2"
-                          >
-                            <FaqOpen/>
-                          </span>
-                        </AccordionTrigger>
-                      </div>
-                    </AccordionHeader>
-                    <AccordionContent
-                      class="py-3 xs:text-sm lg:text-base text-accentBg"
-                      >
-                      Welcome to Love Space Shop - an online sex toy store in Sweden, your ultimate destination for a wide variety of pleasure products.
+                      cheap offerings and exciting sale of sex toys, you can enhance your intim"
+                      />
+                      <FaqItem
+                      title="Delivery"
+                      text="Welcome to Love Space Shop - an online sex toy store in Sweden, your ultimate destination for a wide variety of pleasure products.
                       We take pride in offering an extensive selection of sex toys to cater to all your desires. Whether you're searching for a specific 
                       sex toy or want to explore our cheap sex toys supply, we have something for everyone. Get ready to indulge in pure pleasure as 
                       you buy sex toys and find the perfect sex toy to satisfy your deepest cravings!
                       Discover our vast collection of sex toys at unbeatable prices. Our sex toy store 
                       is dedicated to making pleasure affordable and accessible to all. With our sex toys 
-                      cheap offerings and exciting sale of sex toys, you can enhance your intim
-                    </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem>
-                    <AccordionHeader>
-                      <div
-                      class="flex justify-between"
-                      >
-                        <div
-                        class="text-accentBg xs:text-base mdl:text-xl font-medium xs:max-w-[212px]"
-                        >
-                          Materials
-                        </div>
-                        <AccordionTrigger>
-                          <span
-                          class="flex items-center justify-center p-1 rounded-full bg-accentBg2"
-                          >
-                            <FaqOpen/>
-                          </span>
-                        </AccordionTrigger>
-                      </div>
-                    </AccordionHeader>
-                    <AccordionContent
-                      class="py-3 xs:text-sm lg:text-base text-accentBg"
-                      >
-                      Welcome to Love Space Shop - an online sex toy store in Sweden, your ultimate destination for a wide variety of pleasure products.
+                      cheap offerings and exciting sale of sex toys, you can enhance your intim"
+                      />
+                      <FaqItem
+                      title="Materials"
+                      text="Welcome to Love Space Shop - an online sex toy store in Sweden, your ultimate destination for a wide variety of pleasure products.
                       We take pride in offering an extensive selection of sex toys to cater to all your desires. Whether you're searching for a specific 
                       sex toy or want to explore our cheap sex toys supply, we have something for everyone. Get ready to indulge in pure pleasure as 
                       you buy sex toys and find the perfect sex toy to satisfy your deepest cravings!
                       Discover our vast collection of sex toys at unbeatable prices. Our sex toy store 
                       is dedicated to making pleasure affordable and accessible to all. With our sex toys 
-                      cheap offerings and exciting sale of sex toys, you can enhance your intim
-                    </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem>
-                    <AccordionHeader>
-                      <div
-                      class="flex justify-between"
-                      >
-                        <div
-                        class="text-accentBg xs:text-base mdl:text-xl font-medium xs:max-w-[212px]"
-                        >
-                          Discover Affordable Pleasure
-                        </div>
-                        <AccordionTrigger>
-                          <span
-                          class="flex items-center justify-center p-1 rounded-full bg-accentBg2"
-                          >
-                            <FaqOpen/>
-                          </span>
-                        </AccordionTrigger>
-                      </div>
-                    </AccordionHeader>
-                    <AccordionContent
-                      class="py-3 xs:text-sm lg:text-base text-accentBg"
-                      >
-                      Welcome to Love Space Shop - an online sex toy store in Sweden, your ultimate destination for a wide variety of pleasure products.
+                      cheap offerings and exciting sale of sex toys, you can enhance your intim"
+                      />
+                      <FaqItem
+                      title="Discover Affordable Pleasure"
+                      text="Welcome to Love Space Shop - an online sex toy store in Sweden, your ultimate destination for a wide variety of pleasure products.
                       We take pride in offering an extensive selection of sex toys to cater to all your desires. Whether you're searching for a specific 
                       sex toy or want to explore our cheap sex toys supply, we have something for everyone. Get ready to indulge in pure pleasure as 
                       you buy sex toys and find the perfect sex toy to satisfy your deepest cravings!
                       Discover our vast collection of sex toys at unbeatable prices. Our sex toy store 
                       is dedicated to making pleasure affordable and accessible to all. With our sex toys 
-                      cheap offerings and exciting sale of sex toys, you can enhance your intim
-                    </AccordionContent>
-                    </AccordionItem>
+                      cheap offerings and exciting sale of sex toys, you can enhance your intim"
+                      />
                 </AccordionRoot>
+                <p
+              class="text-sm text-accentBg xs:block lg:hidden font-medium mt-[33px]"
+              >
+                Om du har ytterligare frågor, skriv till oss.
+              </p>
                 <Link
                 href="/"
-                class="xs:hidden text-base font-medium text-accentBg xs:py-1 sm:py-2 xs:px-3 sm:px-5 flex items-center border-[1px] border-accentBg rounded-3xl gap-2 xs:mt-2 mdl:mt-4 max-w-[158px]"
+                class="xs:flex lg:hidden text-base font-medium text-accentBg xs:py-1 sm:py-2 xs:px-3 sm:px-5 flex items-center border-[1px] border-accentBg rounded-3xl gap-2 xs:mt-2 mdl:mt-4 max-w-[158px]"
                 >
                   <span>Contact us</span>
                   <ToContactsIcon/>
