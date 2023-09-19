@@ -135,7 +135,6 @@ export default component$(() => {
                 >
                   <span>Contact us</span>
                   <ToContactsIcon/>
-                  
                 </Link>
             </div>
         </div>
