@@ -19,15 +19,14 @@ export default component$(() => {
 
 
   return (
-    <div class="max-w-container xs:px-[10px] mdl:px-[36px]">
+    <div class="max-w-container xs:px-[10px] mdl:px-[38px] lg:px-[40px]">
       <div
-      class="border-[1px] rounded-3xl xs:p-[10px] mdl:px-[32px] xs:py-5 lg:py-10"
+      class="border-[1px] border-accentBg xs:mb-8 lg:mb-14 rounded-3xl xs:p-[10px] mdl:px-[32px] xs:py-5 lg:py-10"
       >
         <div
-        
-        class="justify-between">
+        class="lg:flex justify-between">
           <div
-          class="xs:hidden lg:flex"
+          class="xs:hidden lg:flex lg:flex-col lg:justify-between lg:w-4/10"
           >
             <div
             class="flex flex-col gap-4 font-medium"
@@ -43,7 +42,14 @@ export default component$(() => {
                 Om du har ytterligare frågor, skriv till oss.
               </p>
             </div>
-              
+            <Link
+                href="/"
+                class="lg:flex text-base font-medium text-accentBg xs:py-1 sm:py-2 xs:px-3 sm:px-5 flex items-center border-[1px] border-accentBg rounded-3xl gap-2 xs:mt-2 mdl:mt-4 max-w-[158px]"
+                >
+                  <span>Contact us</span>
+                  <ToContactsIcon/>
+                  
+            </Link>
           </div>
             <h3
             class="sectionTitle lg:hidden"
@@ -51,15 +57,15 @@ export default component$(() => {
               You cen see the answers
             </h3>
             <div
-            class="xs:px-2 mt-[24px] lg"
+            class="xs:px-2 mt-[24px] lg:w-7/10"
             >
                 <AccordionRoot
-                class="flex flex-col gap-3" 
+                class="flex flex-col gap-3 xl:max-w-[475px]" 
                 >
                     <AccordionItem>
                     <AccordionHeader>
                       <div
-                      class="flex justify-between"
+                      class="flex xs:justify-between lg:gap-10"
                       >
                         <div
                         class="text-accentBg xs:text-base mdl:text-xl font-medium xs:max-w-[212px] sml:max-w-full"
@@ -245,7 +251,7 @@ export default component$(() => {
                 </AccordionRoot>
                 <Link
                 href="/"
-                class="text-base font-medium text-accentBg xs:py-1 sm:py-2 xs:px-3 sm:px-5 flex items-center border-[1px] border-accentBg rounded-3xl gap-2 xs:mt-2 mdl:mt-4 max-w-[158px]"
+                class="xs:hidden text-base font-medium text-accentBg xs:py-1 sm:py-2 xs:px-3 sm:px-5 flex items-center border-[1px] border-accentBg rounded-3xl gap-2 xs:mt-2 mdl:mt-4 max-w-[158px]"
                 >
                   <span>Contact us</span>
                   <ToContactsIcon/>

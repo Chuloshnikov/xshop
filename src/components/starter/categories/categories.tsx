@@ -19,7 +19,7 @@ export default component$(() => {
             Categories
           </h2>
           <div
-          class="xs:block mdl:hidden flex xs:flex-col xs:gap-2 xs:mx-[10px] sml:items-center mt-10"
+          class="xs:flex mdl:hidden flex xs:flex-col gap-2 xs:mx-[10px] sml:items-center mt-10"
           >
             <div 
             class="relative"
