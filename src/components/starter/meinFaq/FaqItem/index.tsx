@@ -14,7 +14,7 @@ interface FaqText {
     text: string
 }
 
-export default component$(({ title, text }: FaqText ) => {
+export default component$(( props: FaqText ) => {
     const isOpenIcon = useSignal(false);
     
     return (
@@ -26,7 +26,7 @@ export default component$(({ title, text }: FaqText ) => {
                 <div
                 class="text-accentBg xs:text-base mdl:text-xl font-medium xs:max-w-[212px] sml:max-w-full"
                 >
-                    {title}
+                    {props.title}
                 </div>
                 <div
                 onClick$={() => isOpenIcon.value = !isOpenIcon.value}
@@ -58,7 +58,7 @@ export default component$(({ title, text }: FaqText ) => {
                     <AccordionContent
                       class="py-3 xs:text-sm lg:text-base text-accentBg lg:max-w-[425px]"
                       >
-                      {text}
+                      {props.text}
                     </AccordionContent>
     </AccordionItem>
     )
