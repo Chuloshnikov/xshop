@@ -369,9 +369,7 @@ export default component$(() => {
             />
             </div>
         </div>
-        
       </div> 
-             
       <Meinfaq/>
     </div>
   );
