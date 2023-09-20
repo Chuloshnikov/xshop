@@ -9,9 +9,12 @@ import {
 import FaqOpen from "../../../../media/icons/FaqOpen.svg?jsx";
 import FaqClose from "../../../../media/icons/FaqClose.svg?jsx";
 
+interface FaqText {
+    title: string,
+    text: string
+}
 
-
-export default component$(({ title, text }) => {
+export default component$(({ title, text }: FaqTest ) => {
     const isOpenIcon = useSignal(false);
     
     return (
