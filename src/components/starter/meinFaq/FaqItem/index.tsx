@@ -14,7 +14,7 @@ interface FaqText {
     text: string
 }
 
-export default component$(({ title, text }: FaqTest ) => {
+export default component$(({ title, text }: FaqText ) => {
     const isOpenIcon = useSignal(false);
     
     return (
