@@ -20,6 +20,10 @@
     "types": ["node", "vite/client"],
     "paths": {
       "~/*": ["./src/*"]
+    },
+    "compilerOptions": {
+      "noEmitOnError": false,
+      "strict": false
     }
   },
   "files": ["./.eslintrc.cjs"],

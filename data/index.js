@@ -4,7 +4,7 @@ import image2 from "./images/image2.png";
 import news1 from "./images/news1.jpg";
 import news2 from "./images/News2.jpg";
 
-export const bestSellesDataTest = { data: [
+export const bestSellesDataTest = [
     {
         id: 111,
         img: image2,
@@ -54,9 +54,9 @@ export const bestSellesDataTest = { data: [
         price: 4226,
     },
 
-]};
+];
 
-export const newsDataTest = { data: [
+export const newsDataTest = [
     {
         id: 12334,
         img: news1,
@@ -91,5 +91,5 @@ export const newsDataTest = { data: [
         topic: "Education"
     },
     
-]};
+];
 
