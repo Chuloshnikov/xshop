@@ -101,6 +101,9 @@ export default component$(() => {
   //const ourNewsData = useOurNewsData<NewsData>();
   const topseler = true;
 
+  const bestSellers: BestSellesData[] = bestSellesDataTest;
+  const newsList: NewsData[] = newsDataTest;
+
 
   const smoothScrollToBottom = $(() => {
     const totalHeight = document.documentElement.scrollHeight;
@@ -131,7 +134,7 @@ export default component$(() => {
             </h2>
           </div>
         <Resource
-          value={bestSellesDataTest}
+          value={bestSellers}
           onPending={() => 
           <div>
             loading...
@@ -218,7 +221,7 @@ export default component$(() => {
             </h2>
           </div>
         <Resource
-          value={bestSellesDataTest}
+          value={bestSellers}
           onPending={() => 
           <div>
             loading...
@@ -313,7 +316,7 @@ export default component$(() => {
             class="max-w-container px-[10px] relative xs:h-[400px] lg:h-[454px] flex overflow-x-auto space-x-4"
             >
                 <Resource
-                value={newsDataTest}
+                value={newsList}
                 onPending={() => 
                 <div>
                   loading...
