@@ -157,7 +157,7 @@ export default component$(() => {
                       class="bg-white flex flex-col overflow-hidden xs:rounded-xl mdl:rounded-2xl lg:rounded-3xl"
                         >
                               <FavoritesIcon
-                              class="z-50 absolute top-2 right-2"
+                              class="z-30 absolute top-2 right-2"
                               />
                           <div
                           class="mx-auto"
@@ -244,7 +244,7 @@ export default component$(() => {
                       class="bg-white flex flex-col overflow-hidden xs:rounded-xl mdl:rounded-2xl lg:rounded-3xl"
                         >
                               <FavoritesIcon
-                              class="z-50 absolute top-2 right-2"
+                              class="z-30 absolute top-2 right-2"
                               />
                           <div
                           class="mx-auto"
