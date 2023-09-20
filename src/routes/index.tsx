@@ -139,11 +139,11 @@ export default component$(() => {
           <div>
             loading...
           </div>}
-            onResolved={(sellesProduct) => (
+            onResolved={(bestSellers) => (
             <div
               class="grid gap-2 xs:grid-cols-2 mdl:grid-cols-4 xs:mx-[10px] mdl:mx-[18px] xl:mx-[40px]"
                 >
-                {sellesProduct && sellesProduct.map(product => (
+                {bestSellers && bestSellers.map(product => (
                   <div
                   key={product.id}
                   class="hoverLinkParent relative"
@@ -226,11 +226,11 @@ export default component$(() => {
           <div>
             loading...
           </div>}
-            onResolved={(sellesProduct) => (
+            onResolved={(bestSellers) => (
             <div
               class="grid gap-2 xs:grid-cols-2 mdl:grid-cols-4 xs:mx-[10px] mdl:mx-[18px] xl:mx-[40px]"
                 >
-                {sellesProduct && sellesProduct.map(product => (
+                {bestSellers && bestSellers.map(product => (
                   <div
                   key={product.id}
                   class="hoverLinkParent relative"
@@ -321,11 +321,11 @@ export default component$(() => {
                 <div>
                   loading...
                 </div>}
-                  onResolved={(newsDataTest) => (
+                  onResolved={(newsList) => (
                   <div
                     class="flex flex gap-2 flex-shrink-0 absolute "
                       >
-                      {newsDataTest && newsDataTest.map(news => (
+                      {newsList && newsList.map(news => (
                       <div
                       class="text-[16px] flex flex-col gap-2 xs:h-[388px] lg:h-[454px]"
                         key={news.id}
