@@ -101,6 +101,7 @@ export default component$(() => {
   //const ourNewsData = useOurNewsData<NewsData>();
   const topseler = true;
 
+
   const smoothScrollToBottom = $(() => {
     const totalHeight = document.documentElement.scrollHeight;
     const step = totalHeight / 100;
