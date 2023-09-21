@@ -118,8 +118,8 @@ export default component$((props: ButtonProps) => {
               >
                 Categories
               </p>
-                <Link href="/">WAbout us</Link>
-                <Link href="/">Contact</Link>
+                <Link href="/aboutus">About us</Link>
+                <Link href="/contactus">Contact</Link>
                 <Link href="/">Blog</Link>
             </div>
           </div>
