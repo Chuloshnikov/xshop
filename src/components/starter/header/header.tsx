@@ -11,7 +11,7 @@ import MenuIcon from '../../../media/icons/menuIcon.svg?jsx';
 export default component$(() => {
   return (
     <header
-    class="fixed z-50 bg-mainBg xs:max-w-[300px] mdl:max-w-[704px] lg:min-w-[940px] lgl:min-w[1010px] xl:max-w-[1237px] w-full xs:py-[15px] xs:px-[18px] xl:p-3 rounded-xl mt-[21px] mx-auto"
+    class="fixed z-50 bg-mainBg xs:max-w-[300px] sm:max-w-[360px] smlg:max-w-[405px] sml:max-w-[465px] md:max-w-[640px] mdl:max-w-[704px] lg:min-w-[940px] lgl:min-w[1010px] xl:max-w-[1237px] w-full xs:py-[4px] md:py-[15px] xs:px-0 md:px-[18px] xl:p-3 rounded-xl mt-[21px] xs:mx-0 md:mx-auto"
     >
       <nav class="z-50 flex justify-between p-2">
         <div>
@@ -23,7 +23,7 @@ export default component$(() => {
         class="flex items-center xs:hidden lg:flex"
         >
           <ul
-          class="flex gap-6 text-base "
+          class="flex gap-6 text-base text-accentBg font-medium"
           >
             <li>
               <Link

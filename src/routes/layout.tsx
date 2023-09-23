@@ -1,4 +1,4 @@
-import { component$, Slot, $, useSignal, useTask$ } from "@builder.io/qwik";
+import { component$, Slot, $, useSignal } from "@builder.io/qwik";
 import CookieModal from "../components/starter/modals/cookieModal/cookieModal";
 import AdultModal from "~/components/starter/modals/adultModal/adultModal";
 
