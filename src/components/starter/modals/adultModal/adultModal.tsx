@@ -1,6 +1,5 @@
 import { component$, $ } from "@builder.io/qwik";
 import type { PropFunction } from "@builder.io/qwik";
-import { Link } from "@builder.io/qwik-city";
 import CloseIcon from "../../../../media/icons/closeIcon.svg?jsx";
 
 export interface AdultModalProps {

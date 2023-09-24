@@ -1,13 +1,7 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import { 
   AccordionRoot, 
-  AccordionItem, 
-  AccordionHeader, 
-  AccordionTrigger, 
-  AccordionContent 
 } from '@qwik-ui/headless';
-import FaqOpen from "../../../media/icons/FaqOpen.svg?jsx";
-import FaqClose from "../../../media/icons/FaqClose.svg?jsx";
 import ToContactsIcon from "../../../media/icons/ReadAllIcon.svg?jsx";
 import { Link } from "@builder.io/qwik-city";
 import FaqItem from "./FaqItem";

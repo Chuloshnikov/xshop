@@ -1,14 +1,10 @@
-import { component$, Resource, useResource$,  $ } from "@builder.io/qwik";
+import { component$,  $ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import { routeLoader$ } from '@builder.io/qwik-city';
+
 import Hero from "~/components/starter/hero/hero";
 import { Link } from '@builder.io/qwik-city';
 import Middleframe from "~/components/starter/middleFrame/middleframe";
 import Meinfaq from "~/components/starter/meinFaq/meinfaq";
-import LightBasket from "../media/icons/lightBascet.svg?jsx";
-import FavoritesIcon from '../media/icons/Favorites.svg?jsx';
-import TimeIcon from "../media/icons/TimeIcon.svg?jsx";
-import { Image } from '@unpic/qwik';
 import Categories from "~/components/starter/categories/categories";
 import ReadAllIcon from "../media/icons/ReadAllIcon.svg?jsx"
 

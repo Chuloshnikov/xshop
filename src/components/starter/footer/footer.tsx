@@ -1,5 +1,4 @@
-import { component$, $ } from "@builder.io/qwik";
-import type { PropFunction } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import InstagramIcon from "../../../media/icons/InstagramIcon.svg?jsx";
 import TwitterIcon from "../../../media/icons/TwitterIcon.svg?jsx";
 import TiktokIcon from "../../../media/icons/TiktokIcon.svg?jsx";
