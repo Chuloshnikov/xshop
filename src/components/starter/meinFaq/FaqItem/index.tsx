@@ -1,6 +1,5 @@
-import { component$, useSignal, $ } from "@builder.io/qwik";
-import { 
-  AccordionRoot, 
+import { component$, useSignal } from "@builder.io/qwik";
+import {  
   AccordionItem, 
   AccordionHeader, 
   AccordionTrigger, 

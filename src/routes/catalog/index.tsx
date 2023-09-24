@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
-
+{/*
 interface ProductData {
     id: number,
     img: string,
@@ -14,7 +14,7 @@ interface ProductData {
 
   }
 
-
+*/}
 {/*
 
 export const useAllProductsData = routeLoader$(async (requestEvent: any) => {

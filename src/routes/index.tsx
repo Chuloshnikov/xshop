@@ -95,11 +95,11 @@ export default component$(() => {
   //const bestSellesData = useBestSellesData<BestSellesData>();
   //const newProductsData = useNewProductsData<BeastSellesData>();
   //const ourNewsData = useOurNewsData<NewsData>();
-  const topseler = true;
+  //const topseler = true;
 
-  const bestSellers: BestSellesData[] = bestSellesDataTest;
-  const newsList: NewsData[] = newsDataTest;
-  console.log(bestSellers);
+  //const bestSellers: BestSellesData[] = bestSellesDataTest;
+  //const newsList: NewsData[] = newsDataTest;
+  //console.log(bestSellers);
 
 
   const smoothScrollToBottom = $(() => {
