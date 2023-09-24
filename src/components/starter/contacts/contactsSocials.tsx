@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import InstagramIcon from "../../../media/icons/ContactsInstagramIcon.svg?jsx";
 import TwitterIcon from "../../../media/icons/ContactsTwitterIcon.svg?jsx";
 import TikTokIcon from "../../../media/icons/ContactsTikTokIcon.svg?jsx";
-import YouTubeIcon from "../../../media/icons/ContactsYouTubeIcon.svg?jsx";
+import YouTubeIcon from "../../../media/icons/contactsyoutube.svg?jsx";
 import LinkedinIcon from "../../../media/icons/ContactsLinkedinIcon.svg?jsx";
 import { Link } from "@builder.io/qwik-city";
 
