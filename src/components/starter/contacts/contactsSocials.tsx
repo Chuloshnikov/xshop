@@ -1,9 +1,9 @@
 import { component$ } from "@builder.io/qwik";
-import ContactsInstagramIcon from "../../../media/icons/ContactsInstagramIcon.svg?jsx";
-import ContactsTwitterIcon from "../../../media/icons/ContactsTwitterIcon.svg?jsx";
-import ContactsTikTokIcon from "../../../media/icons/ContactsTikTokIcon.svg?jsx";
-import ContactsYouTubeIcon from "../../../media/icons/ContactsYouTubeIcon.svg?jsx";
-import ContactsLinkedinIcon from "../../../media/icons/ContactsLinkedinIcon.svg?jsx";
+import InstagramIcon from "../../../media/icons/ContactsInstagramIcon.svg?jsx";
+import TwitterIcon from "../../../media/icons/ContactsTwitterIcon.svg?jsx";
+import TikTokIcon from "../../../media/icons/ContactsTikTokIcon.svg?jsx";
+import YouTubeIcon from "../../../media/icons/ContactsYouTubeIcon.svg?jsx";
+import LinkedinIcon from "../../../media/icons/ContactsLinkedinIcon.svg?jsx";
 import { Link } from "@builder.io/qwik-city";
 
 
@@ -71,27 +71,27 @@ export default component$(() => {
                     <Link
                     href="/"
                     >
-                        <ContactsInstagramIcon/>
+                        <InstagramIcon/>
                     </Link>
                     <Link
                     href="/"
                     >
-                        <ContactsTwitterIcon/>
+                        <TwitterIcon/>
                     </Link>
                     <Link
                     href="/"
                     >
-                        <ContactsTikTokIcon/>
+                        <TikTokIcon/>
                     </Link>
                     <Link
                     href="/"
                     >
-                        <ContactsYouTubeIcon/>
+                        <YouTubeIcon/>
                     </Link>
                     <Link
                     href="/"
                     >
-                        <ContactsLinkedinIcon/>
+                        <LinkedinIcon/>
                     </Link>
                 </div>
         </div>
