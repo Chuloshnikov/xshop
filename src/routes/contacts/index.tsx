@@ -1,6 +1,6 @@
 import { component$, Slot, $, useSignal } from "@builder.io/qwik";
-import ContactUsHeder from "~/components/starter/contactus/contactUsHeder";
-import ContactsSocials from "~/components/starter/contactus/contactsSocials";
+import ContactUsHeder from "~/components/starter/contacts/contactUsHeder";
+import ContactsSocials from "~/components/starter/contacts/contactsSocials";
 
 
 export default component$(() => {
