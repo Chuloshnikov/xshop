@@ -103,6 +103,7 @@ export default component$(() => {
 
   const bestSellers: BestSellesData[] = bestSellesDataTest;
   const newsList: NewsData[] = newsDataTest;
+  console.log(bestSellers);
 
 
   const smoothScrollToBottom = $(() => {
@@ -133,6 +134,7 @@ export default component$(() => {
               Best sellers
             </h2>
           </div>
+          {/*
         <Resource
           value={bestSellers}
           onPending={() => 
@@ -205,6 +207,7 @@ export default component$(() => {
         </div>
       )}
       />
+      */}
         </div>
       </div>
       <div class="max-w-container">
@@ -220,6 +223,7 @@ export default component$(() => {
               New products
             </h2>
           </div>
+          {/*}
         <Resource
           value={bestSellers}
           onPending={() => 
@@ -292,7 +296,8 @@ export default component$(() => {
         </div>
       )}
       />
-        </div>
+        */}
+        </div>        
       </div>
       <div class="max-w-container">
         <div class="ourNewsContainer flex flex-col gap-10 xs:pt-[44px] xs:pb-[53px] mdl:pt-[43.67px] mdl:pb-[41.33px] xs:px-auto mdl:px-7 lg:py-[75.4px] lg:px-10">
@@ -315,6 +320,7 @@ export default component$(() => {
             <div
             class="max-w-container px-[10px] relative xs:h-[400px] lg:h-[454px] flex overflow-x-auto space-x-4"
             >
+              {/*
                 <Resource
                 value={newsList}
                 onPending={() => 
@@ -367,6 +373,7 @@ export default component$(() => {
               </div>
             )}
             />
+                      */}
             </div>
         </div>
       </div> 
