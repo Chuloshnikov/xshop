@@ -9,10 +9,10 @@ import Categories from "~/components/starter/categories/categories";
 import ReadAllIcon from "../media/icons/ReadAllIcon.svg?jsx"
 
 //test data
-import {bestSellesDataTest, newsDataTest} from "../../data/index";
+//import {bestSellesDataTest, newsDataTest} from "../../data/index";
 
 
-
+{/*
 interface BestSellesData {
   id: number,
   img: string,
@@ -29,6 +29,8 @@ interface NewsData {
   time: string,
   topic: string
 }
+
+*/}
 
 {/*
 
