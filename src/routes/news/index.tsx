@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 
+{/*
 interface NewsData {
     id: number,
     img: string,
@@ -9,6 +10,7 @@ interface NewsData {
     time: string,
     topic: string
   }
+*/}
 
 {/*
 
